@@ -30,7 +30,7 @@ const Hero = () => {
             </clipPath>
           </defs>
 
-          {/* Image clipped into shape */}
+          
           <image
             href="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
             width="100%"
@@ -54,12 +54,12 @@ const Hero = () => {
 
       <section className="w-full bg-white py-16 px-6 md:px-12 flex justify-center">
         <div className="max-w-4xl text-center">
-          {/* Heading */}
+          
           <h1 className="text-[4.5rem]  font-extrabold text-[#30333C] leading-tight absolute top-[65vh] left-[8vw]">
             Enactus York
           </h1>
 
-          {/* Supporting text */}
+          
           <p className="-mt-4 text-gray-700 text-left text-lg sm:text-xl max-w-2xl mx-auto absolute top-[80vh] left-[8vw]">
             Enactus is a global organization utilizing entrepreneurship to drive
             positive social change.
@@ -72,19 +72,17 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className= "-mt-60 block lg:hidden w-full bg-amber-400 overflow-hidden whitespace-nowrap py-4">
-      <div className="animate-marquee inline-block">
-        <span className="mx-8 text-lg font-semibold">
-          🚀 Welcome to our website!
-        </span>
-        <span className="mx-8 text-lg font-semibold">
-          🎉 Special offers available now!
-        </span>
-        <span className="mx-8 text-lg font-semibold">
-          📢 Stay tuned for updates!
-        </span>
-      </div>
-    </div>
+      <div className="-mt-60 block lg:hidden w-full bg-amber-400 overflow-hidden py-4">
+  <div className="flex whitespace-nowrap animate-marquee">
+    <span className="mx-8 text-lg font-semibold">🚀 Welcome to Enactus York</span>
+    <span className="mx-8 text-lg font-semibold">📢 Stay tuned for updates!</span>
+
+    {/* Duplicate content for seamless looping */}
+    <span className="mx-8 text-lg font-semibold">🚀 Welcome to Enactus York</span>
+    <span className="mx-8 text-lg font-semibold">📢 Stay tuned for updates!</span>
+  </div>
+</div>
+
     </>
   );
 };

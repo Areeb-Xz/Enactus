@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FaTiktok } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -12,7 +13,9 @@ const Footer = () => {
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
               {/* Replace this with your logo image */}
-              <span className="text-sm font-bold">Logo</span>
+              <span className="text-sm font-bold">
+      <img src={"src/assets/new logo.png"} alt="Logo" className="w-12 h-12" />
+    </span>
             </div>
             <h2 className="text-2xl text-white font-semibold">Enactus York</h2>
           </div>
@@ -38,7 +41,7 @@ const Footer = () => {
           <div className="flex space-x-4 text-zinc-400">
             <a href="https://www.instagram.com/enactus_york/" className="hover:text-white"><FaInstagram size={22} /></a>
             <a href="https://www.linkedin.com/company/enactusyorku/" className="hover:text-white"><FaLinkedin size={22} /></a>
-            <a href="#" className="hover:text-white"><FaXTwitter size={22} /></a>
+            <a href="#" className="hover:text-white"><FaTiktok size={22} /></a>
           </div>
         </div>
       </div>

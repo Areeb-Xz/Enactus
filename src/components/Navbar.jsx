@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,15 +8,21 @@ function Navbar() {
     { name: "Home", href: "#" },
     { name: "About Us", href: "#" },
     { name: "Projects", href: "#" },
-    { name: "Our Impact"}
+    { name: "Our Impact" },
   ];
 
   return (
-    <nav className="font-Urbanist bg-[#30333C] mt-[2vh] mx-[3.5vw] w-[93vw] h-[10vh] text-white text-3xl px-8 flex justify-between items-center rounded-full fixed top-0 z-100 border-yellow-400 border-1 shadow-[0_0_10px_2px_rgba(250,204,21,0.6)]">
-      {/* Left logo */}
-      <div className=" font-urbanist text-xl font-bold">Enactus</div>
+    <nav className=" bg-[#30333C] mt-[2vh] mx-[3.5vw] w-[93vw] h-[10vh] text-white text-3xl px-8 flex justify-between items-center rounded-full fixed top-0 z-100 border-yellow-400 border-1 shadow-[0_0_10px_2px_rgba(250,204,21,0.6)]">
+      <div className=" text-xl font-bold flex">
+        <span className="text-sm font-bold">
+          <img
+            src={"src/assets/new logo.png"}
+            alt="Logo"
+            className="w-15 h-15  "
+          />
+        </span>
+      </div>
 
-      {/* Desktop links */}
       <ul className=" font-urbanist text-xl hidden md:flex space-x-6 ">
         {links.map((link, index) => (
           <li key={index}>
@@ -30,7 +36,6 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Desktop Join Us button */}
       <div className="hidden md:block">
         <a
           href="#join"
@@ -40,7 +45,6 @@ function Navbar() {
         </a>
       </div>
 
-      {/* Mobile Hamburger */}
       <button
         className="md:hidden focus:outline-none"
         onClick={() => setIsOpen(true)}
@@ -48,10 +52,8 @@ function Navbar() {
         <Menu size={28} />
       </button>
 
-      {/* Mobile Fullscreen Menu */}
       {isOpen && (
         <div className="fixed inset-0 bg-[#30333c] flex flex-col items-center justify-center z-50">
-          {/* Close button inside */}
           <button
             className="absolute top-6 right-6 text-white"
             onClick={() => setIsOpen(false)}

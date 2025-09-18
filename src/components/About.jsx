@@ -2,6 +2,14 @@ import React from "react";
 
 export default function EducationSection() {
   return (
+    <>
+    <div className="flex mt-[3vh] items-center justify-center space-x-2 bg-white border border-gray-300 rounded-full px-5 py-2 shadow-sm w-fit mx-auto mb-4">
+      <div className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-400 text-white font-bold">
+        ?
+      </div>
+      <span className="text-gray-700 font-medium">What is Enactus?</span>
+    </div>
+
     <div className="w-full bg-white py-10 px-6 flex flex-col lg:flex-row items-center gap-10 lg:gap-16 max-w-7xl mx-auto">
       {/* Left Section: Image */}
       <div className="relative w-full lg:w-1/2 flex justify-center">
@@ -12,11 +20,14 @@ export default function EducationSection() {
         />
       </div>
 
+
+
+
+
+
       {/* Right Section: Text Content */}
       <div className="w-full lg:w-1/2 space-y-5 text-center lg:text-left">
-        <span className="bg-gray-100 text-gray-700 text-xs sm:text-sm px-3 py-1 rounded-full">
-          What is Enactus ? 
-        </span>
+       
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
           Creating Young leaders everywhere using innovation and business skills
         </h1>
@@ -37,5 +48,6 @@ export default function EducationSection() {
         </div>
       </div>
     </div>
+    </>
   );
 }

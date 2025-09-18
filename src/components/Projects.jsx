@@ -32,7 +32,6 @@ const Projects = () => {
   return (
     <>
       <section className="w-full flex flex-col items-center text-center py-16 px-6">
-        {/* Badge */}
         <div className="flex items-center space-x-2 bg-white border border-gray-300 rounded-full px-4 py-2 shadow-sm">
           <div className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-400 text-white font-bold">
             •
@@ -40,18 +39,16 @@ const Projects = () => {
           <span className="text-gray-700 font-medium">Our Projects</span>
         </div>
 
-        {/* Heading */}
         <h2 className="mt-6 text-4xl md:text-5xl font-extrabold text-black">
           Our Imapctful Student Ventures
         </h2>
 
-        {/* Supporting text */}
         <p className="mt-4 max-w-2xl text-lg text-gray-500">
-          We are currently leading three impactful projects designed to create meaningful change in society.
+          We are currently leading three impactful projects designed to create
+          meaningful change in society.
         </p>
       </section>
 
-      {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-12 w-full max-w-[1400px] mx-auto">
         {programs.map((program) => (
           <div
@@ -64,7 +61,6 @@ const Projects = () => {
               className="w-full h-56 object-cover"
             />
 
-            {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-lg font-bold mb-2">{program.title}</h3>
               <p className="text-gray-600 text-sm mb-4 flex-grow">
