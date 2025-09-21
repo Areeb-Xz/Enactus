@@ -16,7 +16,7 @@ function Navbar() {
       <div className=" text-xl font-bold flex">
         <span className="text-sm font-bold">
           <img
-            src={"src/assets/new logo.png"}
+            src={"assets/new logo.png"}
             alt="Logo"
             className="w-15 h-15  "
           />

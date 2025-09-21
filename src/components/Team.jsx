@@ -68,7 +68,7 @@ function Team() {
 
           <div className="flex-1 z-10 flex items-center justify-center p-6">
             <img
-              src="src/assets/PHOTO-2025-09-17-01-12-51.jpg"
+              src="assets/PHOTO-2025-09-17-01-12-51.jpg"
               alt="Our Story"
               className="rounded-2xl w-full max-w-md object-cover shadow-lg"
             />
