@@ -39,7 +39,7 @@ export default function EducationSection() {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 justify-center lg:justify-start">
           <div className="flex-1 text-center py-4 bg-[#fdf1c8] shadow-md rounded-xl border">
             <p className="text-xs sm:text-sm text-gray-500">Student Members Worldwide</p>
-            <p className="text-xl sm:text-2xl font-bold mt-1 sm:mt-2">42,000+</p>
+            <p className="text-xl sm:text-2xl font-bold mt-1 sm:mt-2">2W000+</p>
           </div>
           <div className="flex-1 text-center py-4 bg-[#30333C] shadow-md rounded-xl border-1 border-[#fdf1c8] ">
             <p className="text-xs sm:text-sm text-[#fdf1c8] ">Lives Impacted</p>
